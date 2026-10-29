@@ -54,7 +54,8 @@
     "lat": 28.5421218,
     "lng": -81.3790450,
     "address": "Orlando, FL, US",
-    "tags": ["Affiliate"]
+    "tags": ["Affiliate"],
+    "description": "Experience the magic of Orlando with Five Star Transportation, the premier choice for premium ground transportation services in the heart of Florida. Whether you're exploring the enchanting theme parks or attending events at the Orange County Convention Center, Five Star Transportation offers top-notch chauffeured services with a fleet of elegant vehicles. Elevate your corporate functions or special occasions with Five Star Transportation's luxurious transportation in Orlando."
   },
   {
     "id": "miami-fl",
