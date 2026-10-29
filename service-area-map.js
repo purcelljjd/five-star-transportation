@@ -136,7 +136,7 @@
     var searchEl = root.querySelector(".gtn-sam-search input");
     var searchClearEl = root.querySelector(".gtn-sam-search-clear");
 
-    var map = L.map(mapId, { scrollWheelZoom: false });
+    var map = L.map(mapId, { scrollWheelZoom: false, closePopupOnClick: false });
     L.tileLayer(options.tileUrl, {
       maxZoom: 18,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -144,7 +144,9 @@
 
     var entries = locations.map(function (loc) {
       var icon = pinIconForTags(loc.tags);
-      var marker = L.marker([loc.lat, loc.lng], icon ? { icon: icon } : undefined).addTo(map).bindPopup(popupHtml(loc));
+      var marker = L.marker([loc.lat, loc.lng], icon ? { icon: icon } : undefined)
+        .addTo(map)
+        .bindPopup(popupHtml(loc), { closeButton: true, autoClose: true });
       var card = document.createElement("div");
       card.className = "gtn-sam-card";
       card.innerHTML = cardHtml(loc);
