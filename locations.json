@@ -65,5 +65,14 @@
     "address": "Miami, FL, US",
     "tags": ["Affiliate"],
     "description": "Immerse yourself in the vibrant culture of Miami with Five Star Transportation, the premier choice for premium ground transportation services. Whether you're exploring the iconic South Beach or attending events in the Wynwood Arts District, Five Star Transportation provides top-notch chauffeured services with a fleet of elegant vehicles. From corporate travel to private tours, Five Star Transportation sets the standard for sophisticated transportation in Miami."
+  },
+  {
+    "id": "key-west-fl",
+    "name": "Key West, FL",
+    "lat": 24.5548262,
+    "lng": -81.8020722,
+    "address": "Key West, FL, US",
+    "tags": ["Affiliate"],
+    "description": "Navigate the tropical paradise of Key West with Five Star Transportation, the leading provider of premium ground transportation services. Whether you're exploring Duval Street or attending events at Mallory Square, Five Star Transportation offers top-notch chauffeured services with a fleet of stylish vehicles. Elevate your corporate functions or special occasions with Five Star Transportation's luxurious transportation in Key West."
   }
 ]
