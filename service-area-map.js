@@ -76,6 +76,44 @@
     );
   }
 
+  // Pin color/label by location type. Headquarters (and anything not listed
+  // here) falls back to Leaflet's default marker, unchanged. Add a new entry
+  // here to give a future location type its own pin color.
+  var PIN_STYLES = {
+    franchise: { color: "#13B5EA", label: "5" },
+    affiliate: { color: "#FF6B35", label: "5" }
+  };
+
+  var pinIconCache = {};
+
+  function buildPinIcon(style) {
+    var key = style.color + "|" + style.label;
+    if (pinIconCache[key]) return pinIconCache[key];
+    var svg =
+      '<svg width="32" height="48" viewBox="0 0 32 48" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M16 0C7.163 0 0 7.163 0 16c0 11 16 32 16 32s16-21 16-32C32 7.163 24.837 0 16 0z" fill="' + style.color + '"/>' +
+      '<circle cx="16" cy="16" r="10.5" fill="#ffffff"/>' +
+      '<text x="16" y="21" text-anchor="middle" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="' + style.color + '">' + escapeHtml(style.label) + "</text>" +
+      "</svg>";
+    var icon = L.divIcon({
+      html: svg,
+      className: "gtn-sam-pin",
+      iconSize: [32, 48],
+      iconAnchor: [16, 48],
+      popupAnchor: [0, -40]
+    });
+    pinIconCache[key] = icon;
+    return icon;
+  }
+
+  function pinIconForTags(tags) {
+    var normalized = (Array.isArray(tags) ? tags : []).map(function (t) { return String(t).toLowerCase(); });
+    for (var key in PIN_STYLES) {
+      if (normalized.indexOf(key) !== -1) return buildPinIcon(PIN_STYLES[key]);
+    }
+    return null;
+  }
+
   function buildWidget(root, locations, options) {
     root.classList.add("gtn-sam");
     root.style.setProperty("--gtn-sam-accent", options.accent);
@@ -98,7 +136,8 @@
     }).addTo(map);
 
     var entries = locations.map(function (loc) {
-      var marker = L.marker([loc.lat, loc.lng]).addTo(map).bindPopup(popupHtml(loc));
+      var icon = pinIconForTags(loc.tags);
+      var marker = L.marker([loc.lat, loc.lng], icon ? { icon: icon } : undefined).addTo(map).bindPopup(popupHtml(loc));
       var card = document.createElement("div");
       card.className = "gtn-sam-card";
       card.innerHTML = cardHtml(loc);

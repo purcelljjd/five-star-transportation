@@ -99,6 +99,11 @@
   position: relative;
 }
 
+.gtn-sam-pin {
+  background: transparent;
+  border: none;
+}
+
 .gtn-sam-popup-name {
   font-weight: 600;
   margin-bottom: 2px;
