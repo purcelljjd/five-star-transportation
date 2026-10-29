@@ -74,5 +74,14 @@
     "address": "Key West, FL, US",
     "tags": ["Affiliate"],
     "description": "Navigate the tropical paradise of Key West with Five Star Transportation, the leading provider of premium ground transportation services. Whether you're exploring Duval Street or attending events at Mallory Square, Five Star Transportation offers top-notch chauffeured services with a fleet of stylish vehicles. Elevate your corporate functions or special occasions with Five Star Transportation's luxurious transportation in Key West."
+  },
+  {
+    "id": "west-palm-beach-fl",
+    "name": "West Palm Beach, FL",
+    "lat": 26.7153640,
+    "lng": -80.0532942,
+    "address": "West Palm Beach, FL, US",
+    "tags": ["Affiliate"],
+    "description": "Discover the elegance of West Palm Beach with Five Star Transportation, offering premium ground transportation services in this Florida paradise. Whether you're exploring the upscale shops on Worth Avenue or attending events at the Kravis Center, Five Star Transportation provides top-notch chauffeured services with a fleet of elegant vehicles. Elevate your corporate functions or special occasions with Five Star Transportation's luxurious transportation in West Palm Beach."
   }
 ]
