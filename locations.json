@@ -92,5 +92,14 @@
     "address": "Naples, FL, US",
     "tags": ["Affiliate"],
     "description": "Experience the luxury of Naples with Five Star Transportation, the premier choice for premium ground transportation services. Whether you're exploring the upscale boutiques on Fifth Avenue South or attending events at the Naples Pier, Five Star Transportation offers top-notch chauffeured services with a fleet of luxurious vehicles. From corporate travel to private tours, Five Star Transportation sets the standard for sophisticated transportation in Naples."
+  },
+  {
+    "id": "st-petersburg-fl",
+    "name": "St. Petersburg, FL",
+    "lat": 27.7712264,
+    "lng": -82.6340259,
+    "address": "St. Petersburg, FL, US",
+    "tags": ["Affiliate"],
+    "description": "Navigate the coastal beauty of St. Petersburg with Five Star Transportation, the leading provider of premium ground transportation services. Whether you're exploring the vibrant arts scene or attending events at Tropicana Field, Five Star Transportation offers top-notch chauffeured services with a fleet of stylish vehicles. From corporate travel to private tours, Five Star Transportation sets the standard for sophisticated transportation in St. Petersburg."
   }
 ]
