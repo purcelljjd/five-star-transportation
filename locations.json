@@ -45,7 +45,8 @@
     "lat": 26.1223084,
     "lng": -80.1433786,
     "address": "Fort Lauderdale, FL, US",
-    "tags": ["Affiliate"]
+    "tags": ["Affiliate"],
+    "description": "Navigate the coastal beauty of Fort Lauderdale with Five Star Transportation, the leading provider of premium ground transportation services. Whether you're exploring the vibrant Las Olas Boulevard or attending events at the Broward Center for the Performing Arts, Five Star Transportation offers top-notch chauffeured services with a fleet of luxurious vehicles. From corporate travel to private tours, Five Star Transportation sets the standard for sophisticated transportation in Fort Lauderdale."
   },
   {
     "id": "orlando-fl",

@@ -109,6 +109,13 @@
   margin-bottom: 2px;
 }
 
+.gtn-sam-popup-desc {
+  font-size: 12px;
+  color: #5b6166;
+  margin-top: 6px;
+  max-width: 240px;
+}
+
 .gtn-sam-popup-address {
   font-size: 12px;
   color: #5b6166;

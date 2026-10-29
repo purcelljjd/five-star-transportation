@@ -72,7 +72,8 @@
   function popupHtml(loc) {
     return (
       '<div class="gtn-sam-popup-name">' + escapeHtml(loc.name) + "</div>" +
-      (loc.address ? '<div class="gtn-sam-popup-address">' + escapeHtml(loc.address) + "</div>" : "")
+      (loc.address ? '<div class="gtn-sam-popup-address">' + escapeHtml(loc.address) + "</div>" : "") +
+      (loc.description ? '<div class="gtn-sam-popup-desc">' + escapeHtml(loc.description) + "</div>" : "")
     );
   }
 
