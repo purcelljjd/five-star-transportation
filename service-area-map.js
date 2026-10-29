@@ -191,7 +191,11 @@
       accent: root.getAttribute("data-accent") || "#0a6cff"
     };
 
-    Promise.all([ensureLeaflet(), ensureWidgetCss(), fetch(source).then(function (r) {
+    // cache-bust: locations.json is served with a 10-minute Cache-Control
+    // max-age, which would otherwise show stale data for that long after any edit.
+    var sourceUrl = source + (source.indexOf("?") !== -1 ? "&" : "?") + "_=" + Date.now();
+
+    Promise.all([ensureLeaflet(), ensureWidgetCss(), fetch(sourceUrl, { cache: "no-store" }).then(function (r) {
       if (!r.ok) throw new Error("locations fetch failed: " + r.status);
       return r.json();
     })]).then(function (results) {
