@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Areas We Service — Five Star Transportation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; padding: 24px; background: #f4f5f6; }
+    h1 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 20px; }
+    .wrap { max-width: 1000px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Areas We Service</h1>
+
+    <!-- This is the whole embed: one div, one script, pointed at a locations feed.
+         Five Star Transportation and Admiral Chauffeured Transportation both point
+         at this same hosted copy, so there's one file to update, not two. -->
+    <div id="service-area-map" data-source="locations.json"></div>
+    <script src="service-area-map.js" data-target="service-area-map" async></script>
+  </div>
+</body>
+</html>

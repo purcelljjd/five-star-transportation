@@ -1,0 +1,66 @@
+[
+  {
+    "id": "southampton-pa",
+    "name": "Southampton, PA",
+    "lat": 40.1742759,
+    "lng": -75.0437814,
+    "address": "Southampton, PA, US",
+    "tags": ["Headquarters"]
+  },
+  {
+    "id": "horsham-pa",
+    "name": "Horsham, PA",
+    "lat": 40.1842455,
+    "lng": -75.1390524,
+    "address": "Horsham, PA, US",
+    "tags": ["Franchise"]
+  },
+  {
+    "id": "huntingdon-valley-pa",
+    "name": "Huntingdon Valley, PA",
+    "lat": 40.1226101,
+    "lng": -75.0635049,
+    "address": "Huntingdon Valley, PA, US",
+    "tags": ["Franchise"]
+  },
+  {
+    "id": "yardley-pa",
+    "name": "Yardley, PA",
+    "lat": 40.2425060,
+    "lng": -74.8389704,
+    "address": "Yardley, PA, US",
+    "tags": ["Franchise"]
+  },
+  {
+    "id": "philadelphia-pa",
+    "name": "Philadelphia, PA",
+    "lat": 39.9527237,
+    "lng": -75.1635262,
+    "address": "Philadelphia, PA, US",
+    "tags": ["Franchise"]
+  },
+  {
+    "id": "fort-lauderdale-fl",
+    "name": "Ft Lauderdale, FL",
+    "lat": 26.1223084,
+    "lng": -80.1433786,
+    "address": "Fort Lauderdale, FL, US",
+    "tags": ["Affiliate"]
+  },
+  {
+    "id": "orlando-fl",
+    "name": "Orlando, FL",
+    "lat": 28.5421218,
+    "lng": -81.3790450,
+    "address": "Orlando, FL, US",
+    "tags": ["Affiliate"]
+  },
+  {
+    "id": "miami-fl",
+    "name": "Miami, FL",
+    "lat": 25.7741566,
+    "lng": -80.1935973,
+    "address": "Miami, FL, US",
+    "tags": ["Affiliate"]
+  }
+]
