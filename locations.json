@@ -110,5 +110,14 @@
     "address": "Tampa, FL, US",
     "tags": ["Affiliate"],
     "description": "Navigate the coastal beauty of Tampa with Five Star Transportation, offering premium ground transportation services in this Florida gem. Whether you're exploring the Tampa Riverwalk or attending events at Amalie Arena, Five Star Transportation provides top-notch chauffeured services with a fleet of stylish vehicles. Elevate your corporate functions or special occasions with Five Star Transportation's luxurious transportation in Tampa."
+  },
+  {
+    "id": "jacksonville-fl",
+    "name": "Jacksonville, FL",
+    "lat": 30.3262247,
+    "lng": -81.6579179,
+    "address": "Jacksonville, FL, US",
+    "tags": ["Affiliate"],
+    "description": "Discover the charm of Jacksonville with Five Star Transportation, the premier luxury transportation service in the River City. Explore historic Riverside or attend events downtown with our refined and comfortable travel experience, featuring a fleet of luxury vehicles and professional chauffeurs for a seamless journey through this coastal gem."
   }
 ]
