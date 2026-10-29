@@ -64,8 +64,7 @@
         : "") +
       (loc.phone
         ? '<a class="gtn-sam-card-phone" href="tel:' + escapeHtml(loc.phone) + '">' + escapeHtml(loc.phone) + "</a>"
-        : "") +
-      '<div class="gtn-sam-card-tagline">Because You Deserve Our Attention</div>'
+        : "")
     );
   }
 
@@ -73,7 +72,8 @@
     return (
       '<div class="gtn-sam-popup-name">' + escapeHtml(loc.name) + "</div>" +
       (loc.address ? '<div class="gtn-sam-popup-address">' + escapeHtml(loc.address) + "</div>" : "") +
-      (loc.description ? '<div class="gtn-sam-popup-desc">' + escapeHtml(loc.description) + "</div>" : "")
+      (loc.description ? '<div class="gtn-sam-popup-desc">' + escapeHtml(loc.description) + "</div>" : "") +
+      '<div class="gtn-sam-popup-tagline">Because You Deserve Our Attention</div>'
     );
   }
 
