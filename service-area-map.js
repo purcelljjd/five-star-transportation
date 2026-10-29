@@ -64,7 +64,8 @@
         : "") +
       (loc.phone
         ? '<a class="gtn-sam-card-phone" href="tel:' + escapeHtml(loc.phone) + '">' + escapeHtml(loc.phone) + "</a>"
-        : "")
+        : "") +
+      '<div class="gtn-sam-card-tagline">Because You Deserve Our Attention</div>'
     );
   }
 

@@ -88,6 +88,13 @@
   text-decoration: none;
 }
 
+.gtn-sam-card-tagline {
+  margin-top: 1em;
+  font-size: 12px;
+  font-weight: 600;
+  color: #13B5EA;
+}
+
 .gtn-sam-map {
   flex: 1;
   position: relative;
