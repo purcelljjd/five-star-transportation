@@ -83,5 +83,14 @@
     "address": "West Palm Beach, FL, US",
     "tags": ["Affiliate"],
     "description": "Discover the elegance of West Palm Beach with Five Star Transportation, offering premium ground transportation services in this Florida paradise. Whether you're exploring the upscale shops on Worth Avenue or attending events at the Kravis Center, Five Star Transportation provides top-notch chauffeured services with a fleet of elegant vehicles. Elevate your corporate functions or special occasions with Five Star Transportation's luxurious transportation in West Palm Beach."
+  },
+  {
+    "id": "naples-fl",
+    "name": "Naples, FL",
+    "lat": 26.1421976,
+    "lng": -81.7942944,
+    "address": "Naples, FL, US",
+    "tags": ["Affiliate"],
+    "description": "Experience the luxury of Naples with Five Star Transportation, the premier choice for premium ground transportation services. Whether you're exploring the upscale boutiques on Fifth Avenue South or attending events at the Naples Pier, Five Star Transportation offers top-notch chauffeured services with a fleet of luxurious vehicles. From corporate travel to private tours, Five Star Transportation sets the standard for sophisticated transportation in Naples."
   }
 ]
