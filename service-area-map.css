@@ -65,12 +65,6 @@
   margin-bottom: 4px;
 }
 
-.gtn-sam-card-desc {
-  font-size: 12px;
-  color: #74797d;
-  margin-bottom: 6px;
-}
-
 .gtn-sam-card-tags {
   display: flex;
   flex-wrap: wrap;

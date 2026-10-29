@@ -57,7 +57,6 @@
     return (
       '<div class="gtn-sam-card-name">' + escapeHtml(loc.name) + "</div>" +
       (loc.address ? '<div class="gtn-sam-card-address">' + escapeHtml(loc.address) + "</div>" : "") +
-      (loc.description ? '<div class="gtn-sam-card-desc">' + escapeHtml(loc.description) + "</div>" : "") +
       (tags.length
         ? '<div class="gtn-sam-card-tags">' +
           tags.map(function (t) { return '<span class="gtn-sam-tag">' + escapeHtml(t) + "</span>"; }).join("") +
