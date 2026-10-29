@@ -23,13 +23,37 @@
   border-bottom: 1px solid #e4e7ea;
 }
 
+.gtn-sam-search-wrap {
+  position: relative;
+}
+
 .gtn-sam-search input {
   width: 100%;
   box-sizing: border-box;
-  padding: 8px 10px;
+  padding: 8px 28px 8px 10px;
   border: 1px solid #ccd2d6;
   border-radius: 6px;
   font-size: 14px;
+}
+
+.gtn-sam-search-clear {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  color: #8a9096;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.gtn-sam-search-clear:hover {
+  color: #4b5054;
 }
 
 .gtn-sam-list {

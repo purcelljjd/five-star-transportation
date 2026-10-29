@@ -122,13 +122,19 @@
     var mapId = root.id + "-canvas";
     root.innerHTML =
       '<div class="gtn-sam-sidebar">' +
-      '<div class="gtn-sam-search"><input type="text" placeholder="Search service areas..." aria-label="Search service areas"></div>' +
+      '<div class="gtn-sam-search">' +
+      '<div class="gtn-sam-search-wrap">' +
+      '<input type="text" placeholder="Search service areas..." aria-label="Search service areas">' +
+      '<button type="button" class="gtn-sam-search-clear" aria-label="Clear search" hidden>&times;</button>' +
+      "</div>" +
+      "</div>" +
       '<div class="gtn-sam-list"></div>' +
       "</div>" +
       '<div class="gtn-sam-map" id="' + mapId + '"></div>';
 
     var listEl = root.querySelector(".gtn-sam-list");
     var searchEl = root.querySelector(".gtn-sam-search input");
+    var searchClearEl = root.querySelector(".gtn-sam-search-clear");
 
     var map = L.map(mapId, { scrollWheelZoom: false });
     L.tileLayer(options.tileUrl, {
@@ -166,8 +172,9 @@
       listEl.innerHTML = '<div class="gtn-sam-empty">No service areas listed yet.</div>';
     }
 
-    searchEl.addEventListener("input", function () {
+    function applySearchFilter() {
       var q = searchEl.value.trim().toLowerCase();
+      searchClearEl.hidden = !q;
       entries.forEach(function (e) {
         var hay = (e.loc.name + " " + (e.loc.address || "")).toLowerCase();
         var match = hay.indexOf(q) !== -1;
@@ -175,6 +182,13 @@
         if (e.marker._icon) e.marker._icon.style.display = match ? "" : "none";
         if (e.marker._shadow) e.marker._shadow.style.display = match ? "" : "none";
       });
+    }
+
+    searchEl.addEventListener("input", applySearchFilter);
+    searchClearEl.addEventListener("click", function () {
+      searchEl.value = "";
+      applySearchFilter();
+      searchEl.focus();
     });
 
     window.addEventListener("resize", function () { map.invalidateSize(); });
