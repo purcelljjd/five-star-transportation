@@ -101,5 +101,14 @@
     "address": "St. Petersburg, FL, US",
     "tags": ["Affiliate"],
     "description": "Navigate the coastal beauty of St. Petersburg with Five Star Transportation, the leading provider of premium ground transportation services. Whether you're exploring the vibrant arts scene or attending events at Tropicana Field, Five Star Transportation offers top-notch chauffeured services with a fleet of stylish vehicles. From corporate travel to private tours, Five Star Transportation sets the standard for sophisticated transportation in St. Petersburg."
+  },
+  {
+    "id": "tampa-fl",
+    "name": "Tampa, FL",
+    "lat": 27.9449854,
+    "lng": -82.4583107,
+    "address": "Tampa, FL, US",
+    "tags": ["Affiliate"],
+    "description": "Navigate the coastal beauty of Tampa with Five Star Transportation, offering premium ground transportation services in this Florida gem. Whether you're exploring the Tampa Riverwalk or attending events at Amalie Arena, Five Star Transportation provides top-notch chauffeured services with a fleet of stylish vehicles. Elevate your corporate functions or special occasions with Five Star Transportation's luxurious transportation in Tampa."
   }
 ]
